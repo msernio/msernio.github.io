@@ -1,0 +1,115 @@
+/* When it comes to the style of my Site, my goal was to try and replicate a similar visual style to the Rich Brown's site in a very simple way, 
+using colour, size, font choice/style, and visual composition.
+*/
+
+
+/* 
+For this section layout I used Flexbox to help position each answer box horizontally across the page. I chose to do alternating left and right layout 
+manipulate visual composition to add some qualities inspired by Rich Brown's style. The margin-bottom creates breathing room between each question, 
+giving the page a spacious feel similar to his site.
+*/
+
+section.row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 9rem;
+    Margin-left: 5rem;
+}
+
+section.right {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 9rem;
+    Margin-right: 5rem;
+}
+
+
+/* 
+The 'content' class selector is responsible for the visual style of all the text boxes. The 60% width enabled space to be left for the large question numbers,
+and then the padding helped ensure the text within had some space between the border of the box so it looked more visually satisfying. I chose white has its not only a
+only contrasting colour to the background colour, but its similar to that of Rich Browns' Site's Visual style. The border radius helped round of the boxes too,
+creating a more modern and subtle effect.
+*/
+
+.content {
+    width: 60%;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1rem;
+    background-color:#ffffff;
+    border-radius: 15px;
+    font-style: italic;
+    align-content: space-around;
+}
+
+/* 
+The 'number' class selector is responsible for the visual style of the numbers adjacent to the text boxes. The margin and alignment variables helped with
+ensuring positioning was balanced. Again, I chose white for its contrasting nature to the background colour and then I chose Bebas Neue' font as that was 
+similar Big and Bold style font to that of Rich Brown's Site.
+*/
+
+.number {
+    font-size: 14rem;
+    color: #ffffff;
+    align-items: center;
+    margin-left: 16rem;
+    margin-right: 21rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
+}
+
+/* 
+The below variables changed all content on the page outside of its own div (text in the text boxes, page colour, etc). I wanted to do a gradient background
+to help add some more visual interest. I chose 'inter' as a font for body text as I felt it was simple, but clean and sleek.
+*/
+
+body {
+    background: linear-gradient(to bottom, #01303e, #538f8f, #325959);
+    color: #2d3535;
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.5rem;
+}
+
+/* 
+For all the headings, I wanted them to be bold and stand out similar to Rich's Site, however I also wanted some visual contrast, hence the jump between
+fonts 'Bebas Neue' and 'Inter', as well the combination of sizes, weights and style changes.
+*/
+
+h1, h2, h3 {
+    color:#ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    text-align:center
+}
+
+h1 {
+    font-size: 6rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: "inter";
+    font-weight: 100;
+    margin-bottom: 6rem;
+}
+
+
+.Images {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+}   
+
+img {
+    width: 45%;
+    margin-bottom: 4rem;
+    border: 2px solid white;
+
+}
